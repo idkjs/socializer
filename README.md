@@ -44,7 +44,7 @@ The codebase also has a Procfile.dev which will run both the Elixir backend and 
 
 ## Deployment
 
-A live demo is deployed to [https://socializer-demo.herokuapp.com/](https://socializer-demo.herokuapp.com/); the database is reset every night. I've also exposed the GraphiQL interface on Gigalixir [here](https://brisk-hospitable-indianelephant.gigalixirapp.com/graphiql) if you want to play around with some queries. (You should not expose GraphiQL on a real production app.)
+A live demo is deployed to [https://socializer-demo.herokuapp.com/](https://socializer-demo.herokuapp.com/); the database is reset every night. I've also exposed the GraphiQL interface on Gigalixir [here](https://dismal-ugly-pelican.gigalixirapp.com/graphiql) if you want to play around with some queries. (You should not expose GraphiQL on a real production app.)
 
 ### Backend
 

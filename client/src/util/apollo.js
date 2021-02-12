@@ -11,7 +11,7 @@ import Cookies from "js-cookie";
 
 const HTTP_URI =
   process.env.NODE_ENV === "production"
-    ? "https://brisk-hospitable-indianelephant.gigalixirapp.com"
+    ? "https://dismal-ugly-pelican.gigalixirapp.com"
     : "http://localhost:4000";
 
 const WS_URI =
