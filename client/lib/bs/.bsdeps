@@ -1,0 +1,18 @@
+9.0.0
+/Volumes/SSD/Github/socializer/client
+0
+bsconfig.json	0x1.809b13fp+30
+src	0x1.809afc7cp+30
+src/util	0x1.809ae528p+30
+src/pages	0x1.809b356p+30
+src/pages/__snapshots__	0x1.809a245p+30
+src/containers	0x1.809a245p+30
+src/containers/__snapshots__	0x1.809a245p+30
+src/components	0x1.809b356p+30
+src/components/__snapshots__	0x1.809a245p+30
+src/bindings	0x1.809b3688p+30
+src/bindings/react-timeago	0x1.809b36acp+30
+src/bindings/react-bootstrap	0x1.809b245cp+30
+src/__snapshots__	0x1.809a245p+30
+===
+/Volumes/SSD/Github/socializer/client/node_modules/@reasonml-community/graphql-ppx/ppx	0x1.809b1518p+30

@@ -1,0 +1,35 @@
+rescript = 1
+g_finger := /Volumes/SSD/Github/socializer/client/node_modules/@rescript/react/lib/ocaml/install.stamp
+g_finger := /Volumes/SSD/Github/socializer/client/node_modules/rescript-apollo-client/lib/ocaml/install.stamp
+g_finger := /Volumes/SSD/Github/socializer/client/node_modules/@reasonml-community/graphql-ppx/lib/ocaml/install.stamp
+g_finger := /Volumes/SSD/Github/socializer/client/node_modules/@ryyppy/rescript-promise/lib/ocaml/install.stamp
+rule astj
+  command = /Volumes/SSD/Github/socializer/client/node_modules/bs-platform/darwin/bsc.exe  -bs-v 9.0.0,1613153606. -ppx /Volumes/SSD/Github/socializer/client/node_modules/@reasonml-community/graphql-ppx/ppx -bs-jsx 3  -absname -bs-ast -o $out $i
+o src/pages/Post.ast : astj ../../src/pages/Post.re
+rule deps
+  command = /Volumes/SSD/Github/socializer/client/node_modules/bs-platform/darwin/bsb_helper.exe -hash 4b78a91924ec325934749cb64b4e882c $in
+  restat = 1
+o src/pages/Post.d : deps src/pages/Post.ast
+rule mij
+  command = /Volumes/SSD/Github/socializer/client/node_modules/bs-platform/darwin/bsc.exe -I src/__snapshots__ -I src/bindings/react-bootstrap -I src/bindings/react-timeago -I src/bindings -I src/components/__snapshots__ -I src/components -I src/containers/__snapshots__ -I src/containers -I src/pages/__snapshots__ -I src/pages -I src/util -I src -I /Volumes/SSD/Github/socializer/client/node_modules/@rescript/react/lib/ocaml -I /Volumes/SSD/Github/socializer/client/node_modules/rescript-apollo-client/lib/ocaml -I /Volumes/SSD/Github/socializer/client/node_modules/@reasonml-community/graphql-ppx/lib/ocaml -I /Volumes/SSD/Github/socializer/client/node_modules/@ryyppy/rescript-promise/lib/ocaml   -bs-package-name socializer -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src/pages/Post.cmj src/pages/Post.cmi ../../src/pages/Post.bs.js : mij src/pages/Post.ast
+o src/components/Feed.ast : astj ../../src/components/Feed.res
+o src/components/Feed.d : deps src/components/Feed.ast
+o src/components/Feed.cmj src/components/Feed.cmi ../../src/components/Feed.bs.js : mij src/components/Feed.ast
+o src/components/ChatBar.ast : astj ../../src/components/ChatBar.res
+o src/components/ChatBar.d : deps src/components/ChatBar.ast
+o src/components/ChatBar.cmj src/components/ChatBar.cmi ../../src/components/ChatBar.bs.js : mij src/components/ChatBar.ast
+o src/components/FeedItem.ast : astj ../../src/components/FeedItem.res
+o src/components/FeedItem.d : deps src/components/FeedItem.ast
+o src/components/FeedItem.cmj src/components/FeedItem.cmi ../../src/components/FeedItem.bs.js : mij src/components/FeedItem.ast
+o src/components/QueryResult.ast : astj ../../src/components/QueryResult.res
+o src/components/QueryResult.d : deps src/components/QueryResult.ast
+o src/components/QueryResult.cmj src/components/QueryResult.cmi ../../src/components/QueryResult.bs.js : mij src/components/QueryResult.ast
+o src/bindings/react-timeago/TimeAgo.ast : astj ../../src/bindings/react-timeago/TimeAgo.res
+o src/bindings/react-timeago/TimeAgo.d : deps src/bindings/react-timeago/TimeAgo.ast
+o src/bindings/react-timeago/TimeAgo.cmj src/bindings/react-timeago/TimeAgo.cmi ../../src/bindings/react-timeago/TimeAgo.bs.js : mij src/bindings/react-timeago/TimeAgo.ast
+o src/bindings/react-bootstrap/BootStrap.ast : astj ../../src/bindings/react-bootstrap/BootStrap.res
+o src/bindings/react-bootstrap/BootStrap.d : deps src/bindings/react-bootstrap/BootStrap.ast
+o src/bindings/react-bootstrap/BootStrap.cmj src/bindings/react-bootstrap/BootStrap.cmi ../../src/bindings/react-bootstrap/BootStrap.bs.js : mij src/bindings/react-bootstrap/BootStrap.ast

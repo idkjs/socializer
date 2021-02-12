@@ -19,6 +19,7 @@
     "dynamic-import": "^0.1.1",
     "express": "^4.16.4",
     "express-sslify": "^1.2.0",
+    "gentype": "^3.43.0",
     "graphql": "^14.4.2",
     "humps": "^2.0.1",
     "ignore-styles": "^5.0.1",
@@ -29,9 +30,9 @@
     "morgan": "^1.9.1",
     "node-fetch": "^2.6.1",
     "phoenix": "^1.5.7",
-    "react": "^16.8.6",
-    "react-bootstrap": "^1.0.0-beta.6",
-    "react-dom": "^16.8.6",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "^17.0.1",
     "react-gravatar": "^2.6.3",
     "react-helmet": "^6.0.0-beta",
     "react-loadable": "^5.5.0",
@@ -40,7 +41,8 @@
     "react-scripts": "^3.4.1",
     "react-select": "^2.4.2",
     "react-timeago": "^4.4.0",
-    "render-if": "^0.1.1"
+    "render-if": "^0.1.1",
+    "rescript-apollo-client": "^1.1.1"
   },
   "devDependencies": {
     "@reasonml-community/graphql-ppx": "^1.0.2",
@@ -55,8 +57,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-standard": "^4.0.1",
-    "gentype": "^3.43.0",
     "jest-junit": "^6.3.0",
+    "patch-package": "^6.2.2",
     "prettier": "^1.17.0",
     "timekeeper": "^2.2.0"
   },
@@ -69,6 +71,7 @@
     "serve": "NODE_PATH=src node ./server/index.js",
     "format": "prettier --write './*.js' '**/*.js'",
     "watch": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
     "lint": "eslint '**/*.js'",
     "test": "react-scripts test --env=jsdom --watchAll=false",
     "test:ci": "JEST_JUNIT_OUTPUT=/tmp/test-results/jest/results.xml react-scripts test --env=jsdom --coverage --runInBand --reporters=\"jest-junit\"",

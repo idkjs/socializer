@@ -1,0 +1,34 @@
+rescript = 1
+rule cp
+  command = cp $i $out
+rule touch
+ command = touch $out
+o Post.cmi : cp ../bs/src/pages/Post.cmi
+o Post.cmj : cp ../bs/src/pages/Post.cmj
+o Post.cmt : cp ../bs/src/pages/Post.cmt
+o Post.re : cp ../../src/pages/Post.re
+o Feed.cmi : cp ../bs/src/components/Feed.cmi
+o Feed.cmj : cp ../bs/src/components/Feed.cmj
+o Feed.cmt : cp ../bs/src/components/Feed.cmt
+o Feed.res : cp ../../src/components/Feed.res
+o ChatBar.cmi : cp ../bs/src/components/ChatBar.cmi
+o ChatBar.cmj : cp ../bs/src/components/ChatBar.cmj
+o ChatBar.cmt : cp ../bs/src/components/ChatBar.cmt
+o ChatBar.res : cp ../../src/components/ChatBar.res
+o FeedItem.cmi : cp ../bs/src/components/FeedItem.cmi
+o FeedItem.cmj : cp ../bs/src/components/FeedItem.cmj
+o FeedItem.cmt : cp ../bs/src/components/FeedItem.cmt
+o FeedItem.res : cp ../../src/components/FeedItem.res
+o QueryResult.cmi : cp ../bs/src/components/QueryResult.cmi
+o QueryResult.cmj : cp ../bs/src/components/QueryResult.cmj
+o QueryResult.cmt : cp ../bs/src/components/QueryResult.cmt
+o QueryResult.res : cp ../../src/components/QueryResult.res
+o TimeAgo.cmi : cp ../bs/src/bindings/react-timeago/TimeAgo.cmi
+o TimeAgo.cmj : cp ../bs/src/bindings/react-timeago/TimeAgo.cmj
+o TimeAgo.cmt : cp ../bs/src/bindings/react-timeago/TimeAgo.cmt
+o TimeAgo.res : cp ../../src/bindings/react-timeago/TimeAgo.res
+o BootStrap.cmi : cp ../bs/src/bindings/react-bootstrap/BootStrap.cmi
+o BootStrap.cmj : cp ../bs/src/bindings/react-bootstrap/BootStrap.cmj
+o BootStrap.cmt : cp ../bs/src/bindings/react-bootstrap/BootStrap.cmt
+o BootStrap.res : cp ../../src/bindings/react-bootstrap/BootStrap.res
+build install.stamp : touch Post.cmi Post.cmj Feed.cmi Feed.cmj ChatBar.cmi ChatBar.cmj FeedItem.cmi FeedItem.cmj QueryResult.cmi QueryResult.cmj TimeAgo.cmi TimeAgo.cmj BootStrap.cmi BootStrap.cmj 
