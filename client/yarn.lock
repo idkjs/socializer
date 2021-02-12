@@ -1796,6 +1796,16 @@
     typed-styles "^0.0.5"
     warning "^3.0.0"
 
+"@reasonml-community/graphql-ppx@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@reasonml-community/graphql-ppx/-/graphql-ppx-1.0.2.tgz#5641413a8873d412dc6a0b00a1fe273323406fb8"
+  integrity sha512-A4KURw/hpGWvW6Dkmg8LpF3GlWZ1FCyP3MhHLUlmViboZ51bRSnO0lU4hK8TE6x5/B2Uik59YACJZX47VqWmOw==
+
+"@rescript/react@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.10.1.tgz#ddce66ba664a104354d559c350ca4ebf17ab5a26"
+  integrity sha512-5eIfGnV1yhjv03ktK6fQ6iEfsZKXKXXrq5hx4+ngEY4R/RU8o/oH9ne375m9RJMugV/jsE8hMoEeSSg2YQy3Ag==
+
 "@restart/context@^2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@restart/context/-/context-2.1.4.tgz#a99d87c299a34c28bd85bb489cb07bfd23149c02"
@@ -1805,6 +1815,11 @@
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.2.5.tgz#e29ef72f90cc7cdb69b3938c7b6cb463a02a40c9"
   integrity sha512-VX+Lxk4fOycsM/V9+9z6XArjC8XEI5c01pkSlzHazVpChMhDfEfVWf+acqJaCbXKwCEvsOsuHOykz0uTI3DfZA==
+
+"@ryyppy/rescript-promise@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@ryyppy/rescript-promise/-/rescript-promise-0.0.2.tgz#9b9dccd724b40b7836e52158bc34deed8a75dddf"
+  integrity sha512-kKW7rWbtW63CM25JodnCIbBPP8sIiqxLgY2EGLFc9yj9nJTuPMLq08k8QY2v+ZMCiiOGD0AmY2lE7T3NRJqySA==
 
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.2"
@@ -3289,6 +3304,11 @@ browserslist@^4.11.1, browserslist@^4.6.2, browserslist@^4.6.4, browserslist@^4.
     electron-to-chromium "^1.3.390"
     node-releases "^1.1.53"
     pkg-up "^2.0.0"
+
+bs-platform@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-9.0.0.tgz#873e9edcfe49a89b082e71c604d73bdb8276e2fb"
+  integrity sha512-32gIXIUt1RO+OUWLrkhXFOuZKS5Cka6lEShXaVC/ohg5N8cUnoNZW9M/vW3CWnmgZkQ0Hp9g9vj5I5NfzHpy5A==
 
 bser@^2.0.0:
   version "2.0.0"
@@ -5912,6 +5932,11 @@ gensync@^1.0.0-beta.1:
   version "1.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.1.tgz#58f4361ff987e5ff6e1e7a210827aa371eaac269"
   integrity sha512-r8EC6NO1sngH/zdD9fiRDLdcgnbayXah+mLgManTaIZJqEC1MZstmnox8KpnI2/fxQwrp5OpCOYWLp4rBl4Jcg==
+
+gentype@^3.43.0:
+  version "3.43.0"
+  resolved "https://registry.yarnpkg.com/gentype/-/gentype-3.43.0.tgz#6026f82732edd944208a0487748ee4a87706dea1"
+  integrity sha512-XJNKJ+kLAHKaJEGVvkJnLtU50h5usxFGoLRCPGbfnlkdZWOymo9bRkAiZp2e5bdWv6dg6/LA4plQVgGvyDACWg==
 
 get-caller-file@^1.0.1:
   version "1.0.3"

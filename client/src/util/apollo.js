@@ -16,7 +16,7 @@ const HTTP_URI =
 
 const WS_URI =
   process.env.NODE_ENV === "production"
-    ? "wss://brisk-hospitable-indianelephant.gigalixirapp.com/socket"
+    ? "wss://dismal-ugly-pelicant.gigalixirapp.com/socket"
     : "ws://localhost:4000/socket";
 
 function createPhoenixSocket() {
