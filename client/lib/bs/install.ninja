@@ -7,6 +7,10 @@ o Post.cmi : cp ../bs/src/pages/Post.cmi
 o Post.cmj : cp ../bs/src/pages/Post.cmj
 o Post.cmt : cp ../bs/src/pages/Post.cmt
 o Post.re : cp ../../src/pages/Post.re
+o StateProvider.cmi : cp ../bs/src/containers/StateProvider.cmi
+o StateProvider.cmj : cp ../bs/src/containers/StateProvider.cmj
+o StateProvider.cmt : cp ../bs/src/containers/StateProvider.cmt
+o StateProvider.res : cp ../../src/containers/StateProvider.res
 o Feed.cmi : cp ../bs/src/components/Feed.cmi
 o Feed.cmj : cp ../bs/src/components/Feed.cmj
 o Feed.cmt : cp ../bs/src/components/Feed.cmt
@@ -31,4 +35,8 @@ o BootStrap.cmi : cp ../bs/src/bindings/react-bootstrap/BootStrap.cmi
 o BootStrap.cmj : cp ../bs/src/bindings/react-bootstrap/BootStrap.cmj
 o BootStrap.cmt : cp ../bs/src/bindings/react-bootstrap/BootStrap.cmt
 o BootStrap.res : cp ../../src/bindings/react-bootstrap/BootStrap.res
-build install.stamp : touch Post.cmi Post.cmj Feed.cmi Feed.cmj ChatBar.cmi ChatBar.cmj FeedItem.cmi FeedItem.cmj QueryResult.cmi QueryResult.cmj TimeAgo.cmi TimeAgo.cmj BootStrap.cmi BootStrap.cmj 
+o JsCookie.cmi : cp ../bs/src/bindings/js-cookie/JsCookie.cmi
+o JsCookie.cmj : cp ../bs/src/bindings/js-cookie/JsCookie.cmj
+o JsCookie.cmt : cp ../bs/src/bindings/js-cookie/JsCookie.cmt
+o JsCookie.res : cp ../../src/bindings/js-cookie/JsCookie.res
+build install.stamp : touch Post.cmi Post.cmj StateProvider.cmi StateProvider.cmj Feed.cmi Feed.cmj ChatBar.cmi ChatBar.cmj FeedItem.cmi FeedItem.cmj QueryResult.cmi QueryResult.cmj TimeAgo.cmi TimeAgo.cmj BootStrap.cmi BootStrap.cmj JsCookie.cmi JsCookie.cmj 

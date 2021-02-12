@@ -7,14 +7,17 @@ rule astj
   command = /Volumes/SSD/Github/socializer/client/node_modules/bs-platform/darwin/bsc.exe  -bs-v 9.0.0,1613153606. -ppx /Volumes/SSD/Github/socializer/client/node_modules/@reasonml-community/graphql-ppx/ppx -bs-jsx 3  -absname -bs-ast -o $out $i
 o src/pages/Post.ast : astj ../../src/pages/Post.re
 rule deps
-  command = /Volumes/SSD/Github/socializer/client/node_modules/bs-platform/darwin/bsb_helper.exe -hash 4b78a91924ec325934749cb64b4e882c $in
+  command = /Volumes/SSD/Github/socializer/client/node_modules/bs-platform/darwin/bsb_helper.exe -hash a821bd7dacc44a9885f8cb9940b731fd $in
   restat = 1
 o src/pages/Post.d : deps src/pages/Post.ast
 rule mij
-  command = /Volumes/SSD/Github/socializer/client/node_modules/bs-platform/darwin/bsc.exe -I src/__snapshots__ -I src/bindings/react-bootstrap -I src/bindings/react-timeago -I src/bindings -I src/components/__snapshots__ -I src/components -I src/containers/__snapshots__ -I src/containers -I src/pages/__snapshots__ -I src/pages -I src/util -I src -I /Volumes/SSD/Github/socializer/client/node_modules/@rescript/react/lib/ocaml -I /Volumes/SSD/Github/socializer/client/node_modules/rescript-apollo-client/lib/ocaml -I /Volumes/SSD/Github/socializer/client/node_modules/@reasonml-community/graphql-ppx/lib/ocaml -I /Volumes/SSD/Github/socializer/client/node_modules/@ryyppy/rescript-promise/lib/ocaml   -bs-package-name socializer -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  command = /Volumes/SSD/Github/socializer/client/node_modules/bs-platform/darwin/bsc.exe -I src/__snapshots__ -I src/bindings/js-cookie -I src/bindings/react-bootstrap -I src/bindings/react-timeago -I src/bindings -I src/components/__snapshots__ -I src/components -I src/containers/__snapshots__ -I src/containers -I src/pages/__snapshots__ -I src/pages -I src/util -I src -I /Volumes/SSD/Github/socializer/client/node_modules/@rescript/react/lib/ocaml -I /Volumes/SSD/Github/socializer/client/node_modules/rescript-apollo-client/lib/ocaml -I /Volumes/SSD/Github/socializer/client/node_modules/@reasonml-community/graphql-ppx/lib/ocaml -I /Volumes/SSD/Github/socializer/client/node_modules/@ryyppy/rescript-promise/lib/ocaml   -bs-package-name socializer -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
   dyndep = 1
   restat = 1
 o src/pages/Post.cmj src/pages/Post.cmi ../../src/pages/Post.bs.js : mij src/pages/Post.ast
+o src/containers/StateProvider.ast : astj ../../src/containers/StateProvider.res
+o src/containers/StateProvider.d : deps src/containers/StateProvider.ast
+o src/containers/StateProvider.cmj src/containers/StateProvider.cmi ../../src/containers/StateProvider.bs.js : mij src/containers/StateProvider.ast
 o src/components/Feed.ast : astj ../../src/components/Feed.res
 o src/components/Feed.d : deps src/components/Feed.ast
 o src/components/Feed.cmj src/components/Feed.cmi ../../src/components/Feed.bs.js : mij src/components/Feed.ast
@@ -33,3 +36,6 @@ o src/bindings/react-timeago/TimeAgo.cmj src/bindings/react-timeago/TimeAgo.cmi 
 o src/bindings/react-bootstrap/BootStrap.ast : astj ../../src/bindings/react-bootstrap/BootStrap.res
 o src/bindings/react-bootstrap/BootStrap.d : deps src/bindings/react-bootstrap/BootStrap.ast
 o src/bindings/react-bootstrap/BootStrap.cmj src/bindings/react-bootstrap/BootStrap.cmi ../../src/bindings/react-bootstrap/BootStrap.bs.js : mij src/bindings/react-bootstrap/BootStrap.ast
+o src/bindings/js-cookie/JsCookie.ast : astj ../../src/bindings/js-cookie/JsCookie.res
+o src/bindings/js-cookie/JsCookie.d : deps src/bindings/js-cookie/JsCookie.ast
+o src/bindings/js-cookie/JsCookie.cmj src/bindings/js-cookie/JsCookie.cmi ../../src/bindings/js-cookie/JsCookie.bs.js : mij src/bindings/js-cookie/JsCookie.ast
