@@ -5,6 +5,7 @@
   "dependencies": {
     "@absinthe/socket": "^0.2.1",
     "@absinthe/socket-apollo-link": "^0.2.1",
+    "@apollo/client": "^3.3.9",
     "@apollo/react-hooks": "^3.0.1",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/polyfill": "^7.4.3",
