@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent, wait } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import { MockedProvider } from "@apollo/react-testing";
+import { MockedProvider } from "@apollo/client/testing";
 import tk from "timekeeper";
 import { GET_CONVERSATIONS } from "components/ChatBar";
 import { GET_USER_INFO } from "components/Nav";

@@ -1,6 +1,5 @@
 import React, { useCallback } from "react";
-import { useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
+import {gql, useQuery } from "@apollo/client";
 import produce from "immer";
 import { Feed, QueryResult } from "components";
 

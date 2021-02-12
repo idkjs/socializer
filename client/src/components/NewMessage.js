@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { useMutation } from "@apollo/react-hooks";
-import gql from "graphql-tag";
+import { gql, useMutation } from "@apollo/client";
 import { Card, Form } from "react-bootstrap";
 import "./NewMessage.css";
 

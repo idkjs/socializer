@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
-import { useQuery, useMutation } from "@apollo/react-hooks";
-import gql from "graphql-tag";
+import {gql, useQuery , useMutation } from "@apollo/client";
 import { Button } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import Select from "react-select";

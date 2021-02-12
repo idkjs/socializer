@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { render, fireEvent } from "@testing-library/react";
-import { ApolloProvider } from "@apollo/react-hooks";
+import { ApolloProvider } from "@apollo/client";
 import ApolloClient from "apollo-client";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import { MockLink } from "@apollo/react-testing";
+import { MockLink } from "@apollo/client/testing";
 import StateProvider from "./StateProvider";
 import { AuthContext, ChatContext } from "util/context";
 

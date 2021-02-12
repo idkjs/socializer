@@ -1,6 +1,5 @@
 import React, { useCallback } from "react";
-import { useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
+import { gql, useQuery } from "@apollo/client";
 import { Col, Container, Row } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import produce from "immer";

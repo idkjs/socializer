@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
-import { useMutation } from "@apollo/react-hooks";
-import gql from "graphql-tag";
+import { gql, useMutation } from "@apollo/client";
 import { Button, Card, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import renderIf from "render-if";

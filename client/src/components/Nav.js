@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
+import {gql, useQuery } from "@apollo/client";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import renderIf from "render-if";
