@@ -1,4 +1,3 @@
 defmodule Socializer.Scheduler do
-  use Quantum.Scheduler,
-    otp_app: :socializer
+  use Quantum, otp_app: :socializer
 end

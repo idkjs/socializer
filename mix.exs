@@ -35,8 +35,8 @@ defmodule Socializer.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.4.0"},
-      {:phoenix_pubsub, "~> 1.1"},
+      {:phoenix, "~> 1.5.7"},
+      {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
@@ -45,21 +45,21 @@ defmodule Socializer.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:cors_plug, "~> 2.0"},
       {:bcrypt_elixir, "~> 2.0"},
-      {:guardian, "~> 1.0"},
-      {:absinthe, "~> 1.4"},
-      {:absinthe_phoenix, "~> 1.4.0"},
-      {:absinthe_plug, "~> 1.4"},
-      {:dataloader, "~> 1.0.0"},
-      {:poison, "~> 2.1.0"},
-      {:quantum, "~> 2.3"},
-      {:timex, "~> 3.0"},
-      {:new_relic_agent, "~> 1.0"},
-      {:new_relic_absinthe, "~> 0.0.2"},
-      {:excoveralls, "~> 0.10", only: :test},
-      {:ex_machina, "~> 2.3", only: :test},
+      {:guardian, "~> 2.1.1"},
+      {:absinthe, "~> 1.6.3"},
+      {:absinthe_phoenix, "~> 2.0.1"},
+      {:absinthe_plug, "~> 1.5.5"},
+      {:dataloader, "~> 1.0.8"},
+      {:poison, "~> 4.0.1"},
+      {:quantum, "~> 3.3.0"},
+      {:timex, "~> 3.6"},
+      {:new_relic_agent, "~> 1.19"},
+      {:new_relic_absinthe, "~> 0.0.4"},
+      {:excoveralls, "~> 0.13.4", only: :test},
+      {:ex_machina, "~> 2.6", only: :test},
       {:ex_spec, "~> 2.0", only: :test},
-      {:faker, "~> 0.7", only: :test},
-      {:junit_formatter, "~> 3.0", only: [:test]}
+      {:faker, "~> 0.16", only: :test},
+      {:junit_formatter, "~> 3.1", only: [:test]}
     ]
   end
 

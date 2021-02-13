@@ -8,6 +8,8 @@ defmodule Socializer.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
+      # Start the PubSub system
+        # {Phoenix.PubSub, name: Socializer.PubSub},
       # Start the Ecto repository
       Socializer.Repo,
       # Start the endpoint when the application starts
